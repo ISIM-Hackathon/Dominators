@@ -1,7 +1,9 @@
 import {useEffect, useState} from 'react'
 import '../Styles/CardsStyle.css'
+import { useNavigate } from 'react-router-dom'
 
 function Home(){
+    const navigate = useNavigate([]) 
 
     const [data, setdata]= useState([])
     function GetAllCourses(){
@@ -9,6 +11,13 @@ function Home(){
             console.log(result)
             setdata(result.data)
         })
+    }
+
+    function handleViewMore(el){
+        console.log(el)
+        navigate('/viewCourses/' +el._id ,{state : el})
+
+
     }
 
     useEffect(()=>{
@@ -24,7 +33,7 @@ function Home(){
           <div class="card-body">
             <h5 class="card-title">{el.name}</h5>
             <p class="card-text">{el.description}</p>
-            <a href="#" class="btn btn-primary">{el.duration}</a>
+            <a onClick={()=>handleViewMore(el)} class="btn btn-primary">View More</a>
           </div>
         </div>
 ))}

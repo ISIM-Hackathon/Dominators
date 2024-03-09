@@ -3,6 +3,7 @@ import Home from '../Screens/Home';
 import Contact from '../Screens/Contact';
 import About from '../Screens/About';
 import Navbar from '../Layout/Navbar';
+import ViewCourses from '../Screens/ViewCourses';
 
 function AllRoutes() {
     return (
@@ -14,6 +15,7 @@ function AllRoutes() {
            <Route path='/' element = {<Home/>} />
            <Route path='/about' element = {<About/>} />
            <Route path='/contact' element = {<Contact/>} />
+           <Route path='/viewCourses/:id' element = {<ViewCourses/>} />
            <Route path='/*' element = {<Home/>} />
 
 
