@@ -4,6 +4,7 @@ import Contact from '../Screens/Contact';
 import About from '../Screens/About';
 import Navbar from '../Layout/Navbar';
 import ViewCourses from '../Screens/ViewCourses';
+import AuthRoutes from './AuthRoutes';
 
 function AllRoutes() {
     return (

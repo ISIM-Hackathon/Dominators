@@ -1,4 +1,4 @@
-import Home from "./Screens/Home"
+import SwitchRouting from "./Routing/SwitchRouting"
 
 import AllRoutes from "./Routing/AllRoutes"
 
@@ -6,9 +6,10 @@ import AllRoutes from "./Routing/AllRoutes"
 function App(){
     return(
         <>
-        <AllRoutes/>
-        
+          <SwitchRouting/>
         </>
+    
+    
         
     )
 }
