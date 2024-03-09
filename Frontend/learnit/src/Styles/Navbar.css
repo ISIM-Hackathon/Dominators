@@ -1,0 +1,37 @@
+.nav-item{
+    cursor: pointer;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color:#b5c0c0;
+    font-weight: bolder;
+    text-decoration: underline;
+
+}
+.navbar-nav .nav-item.actve, .navbar-nav .nav-item.show {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 70%;
+    text-align: center;
+    background-color: #481eb2(133, 0, 131, 134);
+    font-weight: bolder;
+    color: #9f3779;
+    transition: 0.5s;
+  }
+  .nav-item:hover{
+      cursor: pointer;
+      background-color: #604d91;
+      color: #8f157f;
+   }
+   .nav-icon {
+    padding: 20px 0;
+    color: #17a1c7;
+  }
+  .logo h1 {
+    font-size: 35px;
+    font-weight: 900;
+  }
+  .nav-icon {
+    margin-left: 10px;
+  }

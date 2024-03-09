@@ -1,0 +1,12 @@
+.card{
+    display: inline-block;
+    margin-right: 10px;
+    height: 36rem;
+}
+.card-img-top{
+    display: flex;
+    width: 280px;
+    height: 300px;
+    align-self:center;
+    object-fit: contain;
+}
